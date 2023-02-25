@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <title>My Advanced HTML Page</title>
+    <style>
+      /* Add some styling to the page */
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        background-color: lightgray;
+      }
+      h1 {
+        text-align: center;
+        color: blue;
+      }
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: left;
+      }
+      .highlight {
+        background-color: yellow;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .left-column, .right-column {
+        width: 49%;
+        float: left;
+      }
+      .right-column {
+        margin-left: 2%;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th, td {
+        border: 1px solid black;
+        padding: 8px;
+      }
+      th {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to my page</h1>
+    <div class="container">
+      <div class="left-column">
+        <p>This is the left column.</p>
+        <p class="highlight">This is a highlighted paragraph in the left column.</p>
+        <ul>
+          <li>Left column item 1</li>
+          <li>Left column item 2</li>
+          <li>Left column item 3</li>
+        </ul>
+      </div>
+      <div class="right-column">
+        <p>This is the right column.</p>
+        <p class="highlight">This is a highlighted paragraph in the right column.</p>
+        <ol>
+          <li>Right column item 1</li>
+          <li>Right column item 2</li>
+          <li>Right column item 3</li>
+        </ol>
+      </div>
+      <table>
+        <tr>
+          <th>Column 1</th>
+          <th>Column 2</th>
+        </tr>
+        <tr>
+          <td>Row 1, Column 1</td>
+          <td>Row 1, Column 2</td>
+        </tr>
+        <tr>
+          <td>Row 2, Column 1</td>
+          <td>Row 2, Column 2</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
