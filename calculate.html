@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>IN AMAKUSA</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    div {
+      text-align: center;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    nav {
+      background-color: #666;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    nav li:last-child {
+      margin-right: 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px;
+    }
+    nav a:hover {
+      background-color: #999;
+    }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 20px;
+    }
+    article {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px #ccc;
+      margin-bottom: 20px;
+      width: calc(33.33% - 10px);
+    }
+    article:last-child {
+      margin-right: 0;
+    }
+    article h2 {
+      background-color: #333;
+      color: #fff;
+      margin: 0;
+      padding: 10px;
+    }
+    article p {
+      margin: 10px;
+    }
+    aside {
+      background-color: #f2f2f2;
+      padding: 20px;
+      width: 25%;
+    }
+    aside h3 {
+      color: #333;
+      margin: 0;
+    }
+    aside ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    aside li {
+      margin: 10px 0;
+    }
+    aside a {
+      color: #333;
+      text-decoration: none;
+    }
+    aside a:hover {
+      color: #666;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>IN AMAKUSA</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="calculate.html">Let`s calculate your needs</a></li>
+      <li><a href="suportus.html">you can suport us</a></li>
+      <li><a href="aboutus.html">about us</a></li>
+      <li><a href="sense.html"><font color="yellow">HOME</font></a></li>
+    </ul>
+    <ul>
+      <li><a href="sineup.html">サインアップ</a></li>
+      <li><a href="sinein.html">ログイン</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div>
+        <label for="a">how many people:</label>
+        <input type="number" id="a">
+        <label for="b">people(when the water → body weight "kg")</label>
+        <br>
+        <br>
+        <label for="b">how long you live:</label>
+        <input type="number" id="b">
+        <label for="b">days</label>
+        <br>
+        <br>
+        <label >calculate → </label>
+        <button onclick="calculate1()" style="background-color:#c5cf73;">rice</button>
+        <button onclick="calculate2()" style="background-color:#45ab5b;">water</button>
+        <button onclick="calculate3()" style="background-color:#4b4b99;">firewood</button>
+        <br>
+        <br>
+        <label for="c">you need</label>
+        <input type="number" id="c" readonly>
+        <label for="c">kg</label>
+      </div>
+      <script>
+        function calculate1() {
+          // AとBの値を取得
+          var a = parseInt(document.getElementById("a").value);
+          var b = parseInt(document.getElementById("b").value);
+          // Cの値を計算
+          var c = a * b * 0.15;
+          // Cの値を表示
+          document.getElementById("c").value = c;
+          var c = parseFloat(document.marume.elements[0].value);
+  
+  //順に、四捨五入・切り上げ・切り捨てを求める
+            document.marume.elements[1].value = Math.round(num);
+        }
+        function calculate2() {
+          // AとBの値を取得
+          var a = parseInt(document.getElementById("a").value);
+          var b = parseInt(document.getElementById("b").value);
+          // Cの値を計算
+          var c = a * b * 0.035;
+          // Cの値を表示
+          document.getElementById("c").value = c;
+          var c = parseFloat(document.marume.elements[0].value);
+  
+  //順に、四捨五入・切り上げ・切り捨てを求める
+            document.marume.elements[1].value = Math.round(num);
+        }
+        function calculate3() {
+          // AとBの値を取得
+          var a = parseInt(document.getElementById("a").value);
+          var b = parseInt(document.getElementById("b").value);
+          // Cの値を計算
+          var c = a * b * 100000000;
+          // Cの値を表示  薪については楠に聞いてみる
+          document.getElementById("c").value = c;
+          var c = parseFloat(document.marume.elements[0].value);
+  
+  //順に、四捨五入・切り上げ・切り捨てを求める
+            document.marume.elements[1].value = Math.round(num);
+        }
+      </script>
+  </main>
+ 
+  <footer>
+    <p>© 2023 IN AMAKUSA</p>
+  </footer>
+
+</body>
+</html>
